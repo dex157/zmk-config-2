@@ -3,6 +3,7 @@
  *
  * SPDX-License-Identifier: MIT
  */
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -79,8 +80,8 @@
                 med_layer {
                         bindings = <
 &none &ext_power EP_ON &none &none &none &none &none   &none &none &none &none &none &none &none
-      &ext_power EP_OFF &none &none &none &none &none   &none &none &none &none &none &none
-      &none &none &none &none &none &none   &none &none &none &none &none &none
+      &ext_power EP_OFF &bt BT_CLR &none &none &none &none   &none &none &none &none &none &none
+      &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none   &none &none &none &none &none &none
                         &none &none &none   &none &none &none
                         >;
                 };
